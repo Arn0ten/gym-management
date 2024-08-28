@@ -1,10 +1,27 @@
 namespace csPOS_System_Management
 {
-    public partial class Form1 : Form
+    public partial class frmStart : Form
     {
-        public Form1()
+        frmAdministrator FormAdmin = new frmAdministrator();
+
+        public frmStart()
         {
             InitializeComponent();
         }
+
+        private void frmLoginPage_Load(object sender, EventArgs e)
+        {
+
+        }
+        private void btnAdministrator_Click(object sender, EventArgs e)
+        {
+            FormAdmin.ShowDialog();
+        }
+
+        private void btnEmployee_Click(object sender, EventArgs e)
+        {
+
+        }
     }
+
 }
