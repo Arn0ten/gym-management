@@ -27,5 +27,20 @@ namespace csPOS_System_Management
         {
             this.Close();
         }
+
+        private void pictureBox2_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void frmEmployeeSignUp_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void txtPhone_TextChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }

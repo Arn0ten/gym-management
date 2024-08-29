@@ -10,8 +10,10 @@ using System.Windows.Forms;
 
 namespace csPOS_System_Management
 {
+    
     public partial class frmAdministrator : Form
     {
+        frmMainPanel MainPanel = new frmMainPanel();
         public frmAdministrator()
         {
             InitializeComponent();
@@ -20,6 +22,11 @@ namespace csPOS_System_Management
         private void btnExit_Click(object sender, EventArgs e)
         {
             this.Close();
+        }
+
+        private void btnLogin_Click(object sender, EventArgs e)
+        {
+            MainPanel.ShowDialog();
         }
     }
 }
