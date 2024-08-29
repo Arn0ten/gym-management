@@ -10,9 +10,10 @@ using System.Windows.Forms;
 
 namespace csPOS_System_Management
 {
-    public partial class frmAdministrator : Form
+    public partial class frmEmployee : Form
     {
-        public frmAdministrator()
+        frmEmployeeSignUp FormEmployeeSignUp = new frmEmployeeSignUp();
+        public frmEmployee()
         {
             InitializeComponent();
         }
@@ -20,6 +21,11 @@ namespace csPOS_System_Management
         private void btnExit_Click(object sender, EventArgs e)
         {
             this.Close();
+        }
+
+        private void linkSIgnUp_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+        {
+            FormEmployeeSignUp.ShowDialog();
         }
     }
 }

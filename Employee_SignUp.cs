@@ -10,14 +10,20 @@ using System.Windows.Forms;
 
 namespace csPOS_System_Management
 {
-    public partial class frmAdministrator : Form
+    public partial class frmEmployeeSignUp : Form
     {
-        public frmAdministrator()
+
+        public frmEmployeeSignUp()
         {
             InitializeComponent();
         }
 
-        private void btnExit_Click(object sender, EventArgs e)
+        private void linkForgotPassword_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+        {
+
+        }
+
+        private void btnCancel_Click(object sender, EventArgs e)
         {
             this.Close();
         }

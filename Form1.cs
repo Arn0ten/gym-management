@@ -2,7 +2,8 @@ namespace csPOS_System_Management
 {
     public partial class frmStart : Form
     {
-        frmAdministrator FormAdmin = new frmAdministrator();
+        frmAdministrator FormAdministrator = new frmAdministrator();
+        frmEmployee FormEmployee = new frmEmployee();
 
         public frmStart()
         {
@@ -15,12 +16,12 @@ namespace csPOS_System_Management
         }
         private void btnAdministrator_Click(object sender, EventArgs e)
         {
-            FormAdmin.ShowDialog();
+            FormAdministrator.ShowDialog();
         }
 
         private void btnEmployee_Click(object sender, EventArgs e)
         {
-
+            FormEmployee.ShowDialog();
         }
     }
 

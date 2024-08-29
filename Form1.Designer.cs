@@ -91,14 +91,14 @@
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(643, 327);
+            ClientSize = new Size(646, 317);
             Controls.Add(pictureBox2);
             Controls.Add(btnEmployee);
             Controls.Add(pictureBox1);
             Controls.Add(btnAdministrator);
             Name = "frmStart";
             StartPosition = FormStartPosition.CenterScreen;
-            Text = "User";
+            Text = "POS-System-User";
             Load += frmLoginPage_Load;
             ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox2).EndInit();
