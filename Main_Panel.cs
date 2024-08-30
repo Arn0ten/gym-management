@@ -31,5 +31,15 @@ namespace csPOS_System_Management
         {
 
         }
+
+        private void frmMainPanel_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void panel1_Paint_1(object sender, PaintEventArgs e)
+        {
+
+        }
     }
 }
