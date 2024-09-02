@@ -20,6 +20,7 @@ namespace csPOS_System_Management
         }
 
         private void btnEmployee_Click(object sender, EventArgs e)
+
         {
             FormEmployee.ShowDialog();
         }

@@ -265,6 +265,7 @@
             btnDelete.BackColor = Color.Red;
             btnDelete.BackgroundImageLayout = ImageLayout.None;
             btnDelete.FlatAppearance.BorderColor = Color.Gray;
+            btnDelete.FlatStyle = FlatStyle.Flat;
             btnDelete.Font = new Font("Arial Narrow", 9.75F, FontStyle.Bold);
             btnDelete.Image = Properties.Resources.icons8_x_50;
             btnDelete.Location = new Point(739, 52);
@@ -279,6 +280,7 @@
             // button2
             // 
             button2.BackColor = Color.FromArgb(64, 64, 64);
+            button2.FlatStyle = FlatStyle.Flat;
             button2.Font = new Font("Arial Narrow", 9.75F, FontStyle.Bold);
             button2.Location = new Point(896, 52);
             button2.Name = "button2";
@@ -291,6 +293,7 @@
             // button3
             // 
             button3.BackColor = Color.FromArgb(64, 64, 64);
+            button3.FlatStyle = FlatStyle.Flat;
             button3.Font = new Font("Arial Narrow", 9.75F, FontStyle.Bold);
             button3.Location = new Point(1054, 52);
             button3.Name = "button3";
@@ -303,6 +306,7 @@
             // button4
             // 
             button4.BackColor = Color.FromArgb(64, 64, 64);
+            button4.FlatStyle = FlatStyle.Flat;
             button4.Font = new Font("Arial Narrow", 9.75F, FontStyle.Bold);
             button4.Location = new Point(1212, 52);
             button4.Name = "button4";
@@ -315,6 +319,7 @@
             // button5
             // 
             button5.BackColor = Color.FromArgb(64, 64, 64);
+            button5.FlatStyle = FlatStyle.Flat;
             button5.Font = new Font("Arial Narrow", 9.75F, FontStyle.Bold);
             button5.Location = new Point(739, 155);
             button5.Name = "button5";
@@ -326,6 +331,7 @@
             // button6
             // 
             button6.BackColor = Color.FromArgb(64, 64, 64);
+            button6.FlatStyle = FlatStyle.Flat;
             button6.Font = new Font("Arial Narrow", 9.75F, FontStyle.Bold);
             button6.Location = new Point(948, 155);
             button6.Name = "button6";
@@ -337,6 +343,7 @@
             // button7
             // 
             button7.BackColor = Color.FromArgb(64, 64, 64);
+            button7.FlatStyle = FlatStyle.Flat;
             button7.Font = new Font("Arial Narrow", 9.75F, FontStyle.Bold);
             button7.Location = new Point(1158, 155);
             button7.Name = "button7";
@@ -348,6 +355,7 @@
             // btnDiscount
             // 
             btnDiscount.BackColor = Color.FromArgb(64, 64, 64);
+            btnDiscount.FlatStyle = FlatStyle.Flat;
             btnDiscount.Font = new Font("Arial Narrow", 9.75F, FontStyle.Bold);
             btnDiscount.Image = Properties.Resources.icons8_discount_60;
             btnDiscount.Location = new Point(739, 447);
@@ -361,6 +369,7 @@
             // btnComment
             // 
             btnComment.BackColor = Color.FromArgb(64, 64, 64);
+            btnComment.FlatStyle = FlatStyle.Flat;
             btnComment.Font = new Font("Arial Narrow", 9.75F, FontStyle.Bold);
             btnComment.Image = Properties.Resources.icons8_comment_50;
             btnComment.Location = new Point(896, 447);
@@ -374,6 +383,7 @@
             // btnCustomer
             // 
             btnCustomer.BackColor = Color.FromArgb(64, 64, 64);
+            btnCustomer.FlatStyle = FlatStyle.Flat;
             btnCustomer.Font = new Font("Arial Narrow", 9.75F, FontStyle.Bold);
             btnCustomer.Location = new Point(1053, 447);
             btnCustomer.Name = "btnCustomer";
@@ -386,6 +396,7 @@
             // button12
             // 
             button12.BackColor = Color.FromArgb(64, 64, 64);
+            button12.FlatStyle = FlatStyle.Flat;
             button12.Font = new Font("Arial Narrow", 9.75F, FontStyle.Bold);
             button12.Location = new Point(1210, 447);
             button12.Name = "button12";
@@ -398,6 +409,7 @@
             // btnLock
             // 
             btnLock.BackColor = Color.FromArgb(64, 64, 64);
+            btnLock.FlatStyle = FlatStyle.Flat;
             btnLock.Font = new Font("Arial Narrow", 9.75F, FontStyle.Bold);
             btnLock.Image = Properties.Resources.icons8_lock_502;
             btnLock.Location = new Point(739, 531);
@@ -411,6 +423,7 @@
             // btnRefund
             // 
             btnRefund.BackColor = Color.FromArgb(64, 64, 64);
+            btnRefund.FlatStyle = FlatStyle.Flat;
             btnRefund.Font = new Font("Arial Narrow", 9.75F, FontStyle.Bold);
             btnRefund.Image = Properties.Resources.icons8_refund_50;
             btnRefund.Location = new Point(896, 531);
@@ -424,6 +437,7 @@
             // btnPayment
             // 
             btnPayment.BackColor = Color.ForestGreen;
+            btnPayment.FlatStyle = FlatStyle.Flat;
             btnPayment.Font = new Font("Arial Narrow", 9.75F, FontStyle.Bold);
             btnPayment.Image = Properties.Resources.icons8_pay_48;
             btnPayment.Location = new Point(1054, 531);
@@ -437,6 +451,7 @@
             // btnSaveSale
             // 
             btnSaveSale.BackColor = Color.FromArgb(64, 64, 64);
+            btnSaveSale.FlatStyle = FlatStyle.Flat;
             btnSaveSale.Font = new Font("Arial Narrow", 9.75F, FontStyle.Bold);
             btnSaveSale.Image = Properties.Resources.icons8_save_50;
             btnSaveSale.Location = new Point(739, 615);
@@ -450,6 +465,7 @@
             // button17
             // 
             button17.BackColor = Color.FromArgb(64, 64, 64);
+            button17.FlatStyle = FlatStyle.Flat;
             button17.Font = new Font("Arial Narrow", 9.75F, FontStyle.Bold);
             button17.Location = new Point(896, 615);
             button17.Name = "button17";
@@ -463,6 +479,7 @@
             // 
             btnVoidOrder.BackColor = Color.Red;
             btnVoidOrder.BackgroundImageLayout = ImageLayout.None;
+            btnVoidOrder.FlatStyle = FlatStyle.Flat;
             btnVoidOrder.Font = new Font("Arial Narrow", 9.75F, FontStyle.Bold);
             btnVoidOrder.Image = Properties.Resources.icons8_delete_48;
             btnVoidOrder.Location = new Point(1053, 615);
@@ -476,6 +493,7 @@
             // button19
             // 
             button19.BackColor = Color.FromArgb(64, 64, 64);
+            button19.FlatStyle = FlatStyle.Flat;
             button19.Font = new Font("Arial Narrow", 9.75F, FontStyle.Bold);
             button19.Image = Properties.Resources.icons8_hamburger_menu_48;
             button19.Location = new Point(1210, 615);
@@ -489,6 +507,7 @@
             // button20
             // 
             button20.BackColor = Color.FromArgb(64, 64, 64);
+            button20.FlatStyle = FlatStyle.Flat;
             button20.Font = new Font("Arial Narrow", 9.75F, FontStyle.Bold);
             button20.Location = new Point(1158, 216);
             button20.Name = "button20";
@@ -500,6 +519,7 @@
             // button21
             // 
             button21.BackColor = Color.FromArgb(64, 64, 64);
+            button21.FlatStyle = FlatStyle.Flat;
             button21.Font = new Font("Arial Narrow", 9.75F, FontStyle.Bold);
             button21.Location = new Point(948, 216);
             button21.Name = "button21";
@@ -511,6 +531,7 @@
             // button22
             // 
             button22.BackColor = Color.FromArgb(64, 64, 64);
+            button22.FlatStyle = FlatStyle.Flat;
             button22.Font = new Font("Arial Narrow", 9.75F, FontStyle.Bold);
             button22.Location = new Point(739, 216);
             button22.Name = "button22";
@@ -541,7 +562,7 @@
             // 
             btnSearch.BackColor = Color.Green;
             btnSearch.BackgroundImageLayout = ImageLayout.None;
-            btnSearch.FlatAppearance.BorderSize = 0;
+            btnSearch.FlatStyle = FlatStyle.Flat;
             btnSearch.Location = new Point(739, 10);
             btnSearch.Name = "btnSearch";
             btnSearch.Size = new Size(71, 26);
@@ -574,7 +595,7 @@
             // 
             btnCashDrawer.BackColor = Color.FromArgb(64, 64, 64);
             btnCashDrawer.BackgroundImageLayout = ImageLayout.None;
-            btnCashDrawer.FlatAppearance.BorderSize = 0;
+            btnCashDrawer.FlatStyle = FlatStyle.Flat;
             btnCashDrawer.Font = new Font("Arial Narrow", 9.75F, FontStyle.Bold);
             btnCashDrawer.ForeColor = Color.White;
             btnCashDrawer.Image = Properties.Resources.icons8_drawer_50;
