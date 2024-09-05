@@ -113,15 +113,16 @@
             // linkForgotPassword
             // 
             linkForgotPassword.AutoSize = true;
-            linkForgotPassword.Location = new Point(293, 104);
+            linkForgotPassword.Location = new Point(287, 103);
             linkForgotPassword.Name = "linkForgotPassword";
-            linkForgotPassword.Size = new Size(95, 15);
+            linkForgotPassword.Size = new Size(100, 15);
             linkForgotPassword.TabIndex = 11;
             linkForgotPassword.TabStop = true;
-            linkForgotPassword.Text = "Forgot Password";
+            linkForgotPassword.Text = "Forgot Password?";
             // 
             // btnExit
             // 
+            btnExit.FlatStyle = FlatStyle.Flat;
             btnExit.Location = new Point(287, 128);
             btnExit.Name = "btnExit";
             btnExit.Size = new Size(95, 29);
@@ -132,12 +133,16 @@
             // 
             // btnLogin
             // 
+            btnLogin.BackColor = SystemColors.HotTrack;
+            btnLogin.FlatAppearance.BorderSize = 0;
+            btnLogin.FlatStyle = FlatStyle.Flat;
+            btnLogin.ForeColor = Color.White;
             btnLogin.Location = new Point(152, 128);
             btnLogin.Name = "btnLogin";
             btnLogin.Size = new Size(95, 29);
             btnLogin.TabIndex = 9;
             btnLogin.Text = "Login";
-            btnLogin.UseVisualStyleBackColor = true;
+            btnLogin.UseVisualStyleBackColor = false;
             // 
             // linkSIgnUp
             // 

@@ -28,31 +28,23 @@
         /// </summary>
         private void InitializeComponent()
         {
-            pictureBox1 = new PictureBox();
             btnAdministrator = new Button();
-            pictureBox2 = new PictureBox();
             btnEmployee = new Button();
-            ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)pictureBox2).BeginInit();
             SuspendLayout();
-            // 
-            // pictureBox1
-            // 
-            pictureBox1.BackColor = Color.Lime;
-            pictureBox1.BackgroundImageLayout = ImageLayout.None;
-            pictureBox1.Image = Properties.Resources.icons8_admin_settings_male_50;
-            pictureBox1.Location = new Point(81, 123);
-            pictureBox1.Name = "pictureBox1";
-            pictureBox1.Size = new Size(48, 49);
-            pictureBox1.SizeMode = PictureBoxSizeMode.StretchImage;
-            pictureBox1.TabIndex = 1;
-            pictureBox1.TabStop = false;
             // 
             // btnAdministrator
             // 
+            btnAdministrator.Anchor = AnchorStyles.None;
             btnAdministrator.BackColor = Color.Lime;
+            btnAdministrator.FlatAppearance.BorderColor = Color.Lime;
+            btnAdministrator.FlatAppearance.BorderSize = 0;
+            btnAdministrator.FlatAppearance.MouseDownBackColor = Color.FromArgb(0, 0, 192);
+            btnAdministrator.FlatAppearance.MouseOverBackColor = Color.Fuchsia;
+            btnAdministrator.FlatStyle = FlatStyle.Popup;
             btnAdministrator.Font = new Font("Arial", 18F, FontStyle.Bold);
             btnAdministrator.ForeColor = Color.White;
+            btnAdministrator.Image = Properties.Resources.icons8_admin_settings_male_50;
+            btnAdministrator.ImageAlign = ContentAlignment.MiddleLeft;
             btnAdministrator.Location = new Point(69, 108);
             btnAdministrator.Name = "btnAdministrator";
             btnAdministrator.Size = new Size(238, 78);
@@ -62,23 +54,18 @@
             btnAdministrator.UseVisualStyleBackColor = false;
             btnAdministrator.Click += btnAdministrator_Click;
             // 
-            // pictureBox2
-            // 
-            pictureBox2.BackColor = Color.FromArgb(255, 128, 0);
-            pictureBox2.BackgroundImageLayout = ImageLayout.None;
-            pictureBox2.Image = Properties.Resources.icons8_admin_50;
-            pictureBox2.Location = new Point(342, 123);
-            pictureBox2.Name = "pictureBox2";
-            pictureBox2.Size = new Size(48, 49);
-            pictureBox2.SizeMode = PictureBoxSizeMode.StretchImage;
-            pictureBox2.TabIndex = 4;
-            pictureBox2.TabStop = false;
-            // 
             // btnEmployee
             // 
+            btnEmployee.Anchor = AnchorStyles.None;
             btnEmployee.BackColor = Color.FromArgb(255, 128, 0);
+            btnEmployee.FlatAppearance.BorderColor = Color.FromArgb(255, 128, 0);
+            btnEmployee.FlatAppearance.MouseDownBackColor = Color.FromArgb(255, 192, 128);
+            btnEmployee.FlatAppearance.MouseOverBackColor = Color.Yellow;
+            btnEmployee.FlatStyle = FlatStyle.Popup;
             btnEmployee.Font = new Font("Arial", 18F, FontStyle.Bold);
             btnEmployee.ForeColor = Color.White;
+            btnEmployee.Image = Properties.Resources.icons8_admin_50;
+            btnEmployee.ImageAlign = ContentAlignment.MiddleLeft;
             btnEmployee.Location = new Point(329, 108);
             btnEmployee.Name = "btnEmployee";
             btnEmployee.Size = new Size(238, 78);
@@ -92,23 +79,17 @@
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(646, 317);
-            Controls.Add(pictureBox2);
             Controls.Add(btnEmployee);
-            Controls.Add(pictureBox1);
             Controls.Add(btnAdministrator);
             Name = "frmStart";
             StartPosition = FormStartPosition.CenterScreen;
             Text = "POS-System-User";
             Load += frmLoginPage_Load;
-            ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
-            ((System.ComponentModel.ISupportInitialize)pictureBox2).EndInit();
             ResumeLayout(false);
         }
 
         #endregion
-        private PictureBox pictureBox1;
         private Button btnAdministrator;
-        private PictureBox pictureBox2;
         private Button btnEmployee;
     }
 }
