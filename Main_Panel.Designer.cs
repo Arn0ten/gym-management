@@ -29,6 +29,7 @@
         private void InitializeComponent()
         {
             components = new System.ComponentModel.Container();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmMainPanel));
             btnDashboard = new Button();
             btnRevenue = new Button();
             pnlDropdown = new Panel();
@@ -68,6 +69,7 @@
             panel2 = new Panel();
             tmrDropdownTM = new System.Windows.Forms.Timer(components);
             tmrNotifications = new System.Windows.Forms.Timer(components);
+            button7 = new Button();
             pnlDropdown.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
             pnlSide.SuspendLayout();
@@ -77,6 +79,7 @@
             ((System.ComponentModel.ISupportInitialize)pictureBox3).BeginInit();
             pnlTop.SuspendLayout();
             panel1.SuspendLayout();
+            pnlShowHere.SuspendLayout();
             pnlNotifications.SuspendLayout();
             panel4.SuspendLayout();
             SuspendLayout();
@@ -88,7 +91,7 @@
             btnDashboard.FlatAppearance.MouseDownBackColor = Color.Navy;
             btnDashboard.FlatAppearance.MouseOverBackColor = Color.MidnightBlue;
             btnDashboard.FlatStyle = FlatStyle.Flat;
-            btnDashboard.Image = Properties.Resources.icons8_stocks_23;
+            btnDashboard.Image = (Image)resources.GetObject("btnDashboard.Image");
             btnDashboard.ImageAlign = ContentAlignment.MiddleLeft;
             btnDashboard.Location = new Point(3, 3);
             btnDashboard.Name = "btnDashboard";
@@ -105,7 +108,7 @@
             btnRevenue.FlatAppearance.MouseDownBackColor = Color.Navy;
             btnRevenue.FlatAppearance.MouseOverBackColor = Color.MidnightBlue;
             btnRevenue.FlatStyle = FlatStyle.Flat;
-            btnRevenue.Image = Properties.Resources.icons8_revenue_23;
+            btnRevenue.Image = (Image)resources.GetObject("btnRevenue.Image");
             btnRevenue.ImageAlign = ContentAlignment.MiddleLeft;
             btnRevenue.Location = new Point(3, 48);
             btnRevenue.Name = "btnRevenue";
@@ -187,7 +190,7 @@
             // 
             pictureBox1.BackColor = Color.Black;
             pictureBox1.BackgroundImageLayout = ImageLayout.None;
-            pictureBox1.Image = Properties.Resources.icons8_management_24__1_;
+            pictureBox1.Image = (Image)resources.GetObject("pictureBox1.Image");
             pictureBox1.Location = new Point(6, 8);
             pictureBox1.Name = "pictureBox1";
             pictureBox1.Size = new Size(23, 23);
@@ -203,7 +206,7 @@
             btnMembersManagement.FlatAppearance.MouseDownBackColor = Color.Navy;
             btnMembersManagement.FlatAppearance.MouseOverBackColor = Color.Navy;
             btnMembersManagement.FlatStyle = FlatStyle.Flat;
-            btnMembersManagement.Image = Properties.Resources.icons8_expand_arrow_152;
+            btnMembersManagement.Image = (Image)resources.GetObject("btnMembersManagement.Image");
             btnMembersManagement.ImageAlign = ContentAlignment.MiddleRight;
             btnMembersManagement.Location = new Point(0, 0);
             btnMembersManagement.Name = "btnMembersManagement";
@@ -222,7 +225,7 @@
             btnTrainersManagement.FlatAppearance.MouseDownBackColor = Color.Navy;
             btnTrainersManagement.FlatAppearance.MouseOverBackColor = Color.MidnightBlue;
             btnTrainersManagement.FlatStyle = FlatStyle.Flat;
-            btnTrainersManagement.Image = Properties.Resources.icons8_expand_arrow_15;
+            btnTrainersManagement.Image = (Image)resources.GetObject("btnTrainersManagement.Image");
             btnTrainersManagement.ImageAlign = ContentAlignment.MiddleRight;
             btnTrainersManagement.Location = new Point(0, 0);
             btnTrainersManagement.Name = "btnTrainersManagement";
@@ -239,7 +242,7 @@
             btnClassSchedules.FlatAppearance.MouseDownBackColor = Color.Navy;
             btnClassSchedules.FlatAppearance.MouseOverBackColor = Color.MidnightBlue;
             btnClassSchedules.FlatStyle = FlatStyle.Flat;
-            btnClassSchedules.Image = Properties.Resources.icons8_schedule_24;
+            btnClassSchedules.Image = (Image)resources.GetObject("btnClassSchedules.Image");
             btnClassSchedules.ImageAlign = ContentAlignment.MiddleLeft;
             btnClassSchedules.Location = new Point(3, 183);
             btnClassSchedules.Name = "btnClassSchedules";
@@ -256,7 +259,7 @@
             btnAttendanceTracking.FlatAppearance.MouseDownBackColor = Color.Navy;
             btnAttendanceTracking.FlatAppearance.MouseOverBackColor = Color.MidnightBlue;
             btnAttendanceTracking.FlatStyle = FlatStyle.Flat;
-            btnAttendanceTracking.Image = Properties.Resources.icons8_attendance_24;
+            btnAttendanceTracking.Image = (Image)resources.GetObject("btnAttendanceTracking.Image");
             btnAttendanceTracking.ImageAlign = ContentAlignment.MiddleLeft;
             btnAttendanceTracking.Location = new Point(3, 228);
             btnAttendanceTracking.Name = "btnAttendanceTracking";
@@ -273,7 +276,7 @@
             btnMemberships.FlatAppearance.MouseDownBackColor = Color.Navy;
             btnMemberships.FlatAppearance.MouseOverBackColor = Color.MidnightBlue;
             btnMemberships.FlatStyle = FlatStyle.Flat;
-            btnMemberships.Image = Properties.Resources.icons8_diamond_24;
+            btnMemberships.Image = (Image)resources.GetObject("btnMemberships.Image");
             btnMemberships.ImageAlign = ContentAlignment.MiddleLeft;
             btnMemberships.Location = new Point(3, 318);
             btnMemberships.Name = "btnMemberships";
@@ -290,7 +293,7 @@
             btnBillingPayments.FlatAppearance.MouseDownBackColor = Color.Navy;
             btnBillingPayments.FlatAppearance.MouseOverBackColor = Color.MidnightBlue;
             btnBillingPayments.FlatStyle = FlatStyle.Flat;
-            btnBillingPayments.Image = Properties.Resources.icons8_peso_23;
+            btnBillingPayments.Image = (Image)resources.GetObject("btnBillingPayments.Image");
             btnBillingPayments.ImageAlign = ContentAlignment.MiddleLeft;
             btnBillingPayments.Location = new Point(3, 273);
             btnBillingPayments.Name = "btnBillingPayments";
@@ -349,7 +352,7 @@
             button6.FlatAppearance.MouseDownBackColor = Color.Navy;
             button6.FlatAppearance.MouseOverBackColor = Color.MidnightBlue;
             button6.FlatStyle = FlatStyle.Flat;
-            button6.Image = Properties.Resources.icons8_expand_arrow_15;
+            button6.Image = (Image)resources.GetObject("button6.Image");
             button6.ImageAlign = ContentAlignment.MiddleRight;
             button6.Location = new Point(0, 117);
             button6.Name = "button6";
@@ -366,7 +369,7 @@
             button5.FlatAppearance.MouseDownBackColor = Color.Navy;
             button5.FlatAppearance.MouseOverBackColor = Color.MidnightBlue;
             button5.FlatStyle = FlatStyle.Flat;
-            button5.Image = Properties.Resources.icons8_expand_arrow_15;
+            button5.Image = (Image)resources.GetObject("button5.Image");
             button5.ImageAlign = ContentAlignment.MiddleRight;
             button5.Location = new Point(0, 78);
             button5.Name = "button5";
@@ -383,7 +386,7 @@
             button4.FlatAppearance.MouseDownBackColor = Color.Navy;
             button4.FlatAppearance.MouseOverBackColor = Color.MidnightBlue;
             button4.FlatStyle = FlatStyle.Flat;
-            button4.Image = Properties.Resources.icons8_expand_arrow_15;
+            button4.Image = (Image)resources.GetObject("button4.Image");
             button4.ImageAlign = ContentAlignment.MiddleRight;
             button4.Location = new Point(0, 39);
             button4.Name = "button4";
@@ -418,7 +421,7 @@
             btnWelcome.FlatAppearance.MouseDownBackColor = Color.FromArgb(128, 128, 255);
             btnWelcome.FlatAppearance.MouseOverBackColor = Color.FromArgb(0, 0, 192);
             btnWelcome.FlatStyle = FlatStyle.Flat;
-            btnWelcome.Image = Properties.Resources.icons8_user_30;
+            btnWelcome.Image = (Image)resources.GetObject("btnWelcome.Image");
             btnWelcome.ImageAlign = ContentAlignment.MiddleRight;
             btnWelcome.Location = new Point(0, 0);
             btnWelcome.MinimumSize = new Size(140, 43);
@@ -438,7 +441,7 @@
             btnLogout.FlatAppearance.MouseOverBackColor = Color.Silver;
             btnLogout.FlatStyle = FlatStyle.Flat;
             btnLogout.ForeColor = Color.FromArgb(64, 64, 64);
-            btnLogout.Image = Properties.Resources.icons8_logout_24;
+            btnLogout.Image = (Image)resources.GetObject("btnLogout.Image");
             btnLogout.ImageAlign = ContentAlignment.MiddleLeft;
             btnLogout.Location = new Point(0, 132);
             btnLogout.Name = "btnLogout";
@@ -455,7 +458,7 @@
             btnChangePassword.FlatAppearance.MouseOverBackColor = Color.Silver;
             btnChangePassword.FlatStyle = FlatStyle.Flat;
             btnChangePassword.ForeColor = Color.FromArgb(64, 64, 64);
-            btnChangePassword.Image = Properties.Resources.icons8_settings_24__1_;
+            btnChangePassword.Image = (Image)resources.GetObject("btnChangePassword.Image");
             btnChangePassword.ImageAlign = ContentAlignment.MiddleLeft;
             btnChangePassword.Location = new Point(0, 89);
             btnChangePassword.Name = "btnChangePassword";
@@ -472,7 +475,7 @@
             btnProfile.FlatAppearance.MouseOverBackColor = Color.Silver;
             btnProfile.FlatStyle = FlatStyle.Flat;
             btnProfile.ForeColor = Color.FromArgb(64, 64, 64);
-            btnProfile.Image = Properties.Resources.people_16551886;
+            btnProfile.Image = (Image)resources.GetObject("btnProfile.Image");
             btnProfile.ImageAlign = ContentAlignment.MiddleLeft;
             btnProfile.Location = new Point(0, 45);
             btnProfile.Name = "btnProfile";
@@ -488,7 +491,7 @@
             btnNotifications.FlatAppearance.MouseDownBackColor = Color.Navy;
             btnNotifications.FlatAppearance.MouseOverBackColor = Color.MidnightBlue;
             btnNotifications.FlatStyle = FlatStyle.Flat;
-            btnNotifications.Image = Properties.Resources.icons8_bell_24;
+            btnNotifications.Image = (Image)resources.GetObject("btnNotifications.Image");
             btnNotifications.ImageAlign = ContentAlignment.MiddleLeft;
             btnNotifications.Location = new Point(860, 13);
             btnNotifications.Name = "btnNotifications";
@@ -513,7 +516,7 @@
             btnMenu.BackgroundImageLayout = ImageLayout.None;
             btnMenu.FlatAppearance.BorderSize = 0;
             btnMenu.FlatStyle = FlatStyle.Flat;
-            btnMenu.Image = Properties.Resources.option;
+            btnMenu.Image = (Image)resources.GetObject("btnMenu.Image");
             btnMenu.Location = new Point(5, 15);
             btnMenu.Name = "btnMenu";
             btnMenu.Size = new Size(35, 31);
@@ -524,7 +527,7 @@
             // pictureBox3
             // 
             pictureBox3.BackgroundImageLayout = ImageLayout.None;
-            pictureBox3.Image = Properties.Resources.cy_removebg_preview;
+            pictureBox3.Image = (Image)resources.GetObject("pictureBox3.Image");
             pictureBox3.Location = new Point(46, 7);
             pictureBox3.Name = "pictureBox3";
             pictureBox3.Size = new Size(167, 46);
@@ -560,6 +563,7 @@
             // 
             pnlShowHere.AutoScroll = true;
             pnlShowHere.BackColor = Color.White;
+            pnlShowHere.Controls.Add(button7);
             pnlShowHere.Location = new Point(0, 53);
             pnlShowHere.Name = "pnlShowHere";
             pnlShowHere.Size = new Size(1150, 675);
@@ -617,6 +621,16 @@
             tmrNotifications.Interval = 1;
             tmrNotifications.Tick += tmrNotifications_Tick;
             // 
+            // button7
+            // 
+            button7.BackColor = Color.Black;
+            button7.Location = new Point(147, 148);
+            button7.Name = "button7";
+            button7.Size = new Size(242, 61);
+            button7.TabIndex = 0;
+            button7.Text = "fffffff";
+            button7.UseVisualStyleBackColor = false;
+            // 
             // frmMainPanel
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
@@ -642,6 +656,7 @@
             ((System.ComponentModel.ISupportInitialize)pictureBox3).EndInit();
             pnlTop.ResumeLayout(false);
             panel1.ResumeLayout(false);
+            pnlShowHere.ResumeLayout(false);
             pnlNotifications.ResumeLayout(false);
             panel4.ResumeLayout(false);
             panel4.PerformLayout();
@@ -688,5 +703,6 @@
         private Panel panel4;
         private System.Windows.Forms.Timer tmrNotifications;
         private Label lblNotifications;
+        private Button button7;
     }
 }
