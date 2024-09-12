@@ -28,336 +28,594 @@
         /// </summary>
         private void InitializeComponent()
         {
-            panel1 = new Panel();
-            pictureBox1 = new PictureBox();
-            flowLayoutPanel2 = new FlowLayoutPanel();
-            panel2 = new Panel();
+            components = new System.ComponentModel.Container();
             btnDashboard = new Button();
-            panel3 = new Panel();
-            btnManagement = new Button();
-            panel4 = new Panel();
-            btnMembershipPlans = new Button();
-            panel5 = new Panel();
-            btnAttendanceTracking = new Button();
-            panel6 = new Panel();
-            btnPaymentAndBilling = new Button();
-            panel7 = new Panel();
             btnRevenue = new Button();
-            panel8 = new Panel();
-            btnSettings = new Button();
-            flowLayoutPanel1 = new FlowLayoutPanel();
-            panel9 = new Panel();
-            btnMemberManagement = new Button();
-            panel10 = new Panel();
-            btnClassManagement = new Button();
-            panel11 = new Panel();
-            btnInstructorManagement = new Button();
-            panel1.SuspendLayout();
+            pnlDropdown = new Panel();
+            button3 = new Button();
+            button2 = new Button();
+            button1 = new Button();
+            pictureBox1 = new PictureBox();
+            btnMembersManagement = new Button();
+            btnTrainersManagement = new Button();
+            btnClassSchedules = new Button();
+            btnAttendanceTracking = new Button();
+            btnMemberships = new Button();
+            btnBillingPayments = new Button();
+            tmrDropdown = new System.Windows.Forms.Timer(components);
+            tmrSidecut = new System.Windows.Forms.Timer(components);
+            pnlSide = new FlowLayoutPanel();
+            pnlTrainersManagement = new Panel();
+            button6 = new Button();
+            button5 = new Button();
+            button4 = new Button();
+            tmrWelcome = new System.Windows.Forms.Timer(components);
+            pnlWelcome = new Panel();
+            btnWelcome = new Button();
+            btnLogout = new Button();
+            btnChangePassword = new Button();
+            btnProfile = new Button();
+            btnNotifications = new Button();
+            pnlTopside = new Panel();
+            btnMenu = new Button();
+            pictureBox3 = new PictureBox();
+            pnlTop = new Panel();
+            panel1 = new Panel();
+            pnlShowHere = new Panel();
+            pnlNotifications = new Panel();
+            panel4 = new Panel();
+            lblNotifications = new Label();
+            panel2 = new Panel();
+            tmrDropdownTM = new System.Windows.Forms.Timer(components);
+            tmrNotifications = new System.Windows.Forms.Timer(components);
+            pnlDropdown.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
-            flowLayoutPanel2.SuspendLayout();
-            panel2.SuspendLayout();
-            panel3.SuspendLayout();
+            pnlSide.SuspendLayout();
+            pnlTrainersManagement.SuspendLayout();
+            pnlWelcome.SuspendLayout();
+            pnlTopside.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)pictureBox3).BeginInit();
+            pnlTop.SuspendLayout();
+            panel1.SuspendLayout();
+            pnlNotifications.SuspendLayout();
             panel4.SuspendLayout();
-            panel5.SuspendLayout();
-            panel6.SuspendLayout();
-            panel7.SuspendLayout();
-            panel8.SuspendLayout();
-            flowLayoutPanel1.SuspendLayout();
-            panel9.SuspendLayout();
-            panel10.SuspendLayout();
-            panel11.SuspendLayout();
             SuspendLayout();
-            // 
-            // panel1
-            // 
-            panel1.BackColor = Color.White;
-            panel1.Controls.Add(pictureBox1);
-            panel1.Dock = DockStyle.Top;
-            panel1.Location = new Point(0, 0);
-            panel1.Name = "panel1";
-            panel1.Size = new Size(1370, 35);
-            panel1.TabIndex = 0;
-            // 
-            // pictureBox1
-            // 
-            pictureBox1.Image = Properties.Resources.icons8_menu_301;
-            pictureBox1.Location = new Point(6, 3);
-            pictureBox1.Name = "pictureBox1";
-            pictureBox1.Size = new Size(30, 30);
-            pictureBox1.TabIndex = 0;
-            pictureBox1.TabStop = false;
-            pictureBox1.Click += pictureBox1_Click;
-            // 
-            // flowLayoutPanel2
-            // 
-            flowLayoutPanel2.BackColor = Color.Black;
-            flowLayoutPanel2.Controls.Add(panel2);
-            flowLayoutPanel2.Controls.Add(panel7);
-            flowLayoutPanel2.Controls.Add(panel3);
-            flowLayoutPanel2.Controls.Add(flowLayoutPanel1);
-            flowLayoutPanel2.Controls.Add(panel4);
-            flowLayoutPanel2.Controls.Add(panel5);
-            flowLayoutPanel2.Controls.Add(panel6);
-            flowLayoutPanel2.Controls.Add(panel8);
-            flowLayoutPanel2.Dock = DockStyle.Left;
-            flowLayoutPanel2.Location = new Point(0, 35);
-            flowLayoutPanel2.Name = "flowLayoutPanel2";
-            flowLayoutPanel2.Size = new Size(214, 694);
-            flowLayoutPanel2.TabIndex = 1;
-            flowLayoutPanel2.Paint += flowLayoutPanel2_Paint;
-            // 
-            // panel2
-            // 
-            panel2.BackColor = Color.Transparent;
-            panel2.Controls.Add(btnDashboard);
-            panel2.Location = new Point(3, 3);
-            panel2.Name = "panel2";
-            panel2.Padding = new Padding(0, 30, 30, 0);
-            panel2.Size = new Size(208, 42);
-            panel2.TabIndex = 0;
-            panel2.Paint += panel2_Paint;
             // 
             // btnDashboard
             // 
             btnDashboard.BackColor = Color.Black;
-            btnDashboard.Font = new Font("Tahoma", 9F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            btnDashboard.ForeColor = Color.White;
+            btnDashboard.FlatAppearance.BorderSize = 0;
+            btnDashboard.FlatAppearance.MouseDownBackColor = Color.Navy;
+            btnDashboard.FlatAppearance.MouseOverBackColor = Color.MidnightBlue;
+            btnDashboard.FlatStyle = FlatStyle.Flat;
             btnDashboard.Image = Properties.Resources.icons8_stocks_23;
-            btnDashboard.Location = new Point(-218, -20);
+            btnDashboard.ImageAlign = ContentAlignment.MiddleLeft;
+            btnDashboard.Location = new Point(3, 3);
             btnDashboard.Name = "btnDashboard";
-            btnDashboard.Size = new Size(475, 85);
+            btnDashboard.Size = new Size(203, 39);
             btnDashboard.TabIndex = 2;
-            btnDashboard.Text = "                                                                  Dashboard";
-            btnDashboard.TextAlign = ContentAlignment.MiddleLeft;
+            btnDashboard.Text = "Dashboard";
             btnDashboard.UseVisualStyleBackColor = false;
-            // 
-            // panel3
-            // 
-            panel3.BackColor = Color.Transparent;
-            panel3.Controls.Add(btnManagement);
-            panel3.Location = new Point(3, 99);
-            panel3.Name = "panel3";
-            panel3.Padding = new Padding(0, 30, 30, 0);
-            panel3.Size = new Size(208, 42);
-            panel3.TabIndex = 3;
-            // 
-            // btnManagement
-            // 
-            btnManagement.BackColor = Color.Black;
-            btnManagement.Font = new Font("Tahoma", 9F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            btnManagement.ForeColor = Color.White;
-            btnManagement.Image = Properties.Resources.icons8_management_24__1_;
-            btnManagement.Location = new Point(-218, -20);
-            btnManagement.Name = "btnManagement";
-            btnManagement.Size = new Size(475, 85);
-            btnManagement.TabIndex = 2;
-            btnManagement.Text = "                                                                  Management";
-            btnManagement.TextAlign = ContentAlignment.MiddleLeft;
-            btnManagement.UseVisualStyleBackColor = false;
-            // 
-            // panel4
-            // 
-            panel4.BackColor = Color.Transparent;
-            panel4.Controls.Add(btnMembershipPlans);
-            panel4.Location = new Point(3, 298);
-            panel4.Name = "panel4";
-            panel4.Padding = new Padding(0, 30, 30, 0);
-            panel4.Size = new Size(208, 42);
-            panel4.TabIndex = 4;
-            // 
-            // btnMembershipPlans
-            // 
-            btnMembershipPlans.BackColor = Color.Black;
-            btnMembershipPlans.Font = new Font("Tahoma", 9F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            btnMembershipPlans.ForeColor = Color.White;
-            btnMembershipPlans.Image = Properties.Resources.icons8_verified_22;
-            btnMembershipPlans.Location = new Point(-218, -20);
-            btnMembershipPlans.Name = "btnMembershipPlans";
-            btnMembershipPlans.Size = new Size(475, 85);
-            btnMembershipPlans.TabIndex = 2;
-            btnMembershipPlans.Text = "                                                                  Membership Plans";
-            btnMembershipPlans.TextAlign = ContentAlignment.MiddleLeft;
-            btnMembershipPlans.UseVisualStyleBackColor = false;
-            // 
-            // panel5
-            // 
-            panel5.BackColor = Color.Transparent;
-            panel5.Controls.Add(btnAttendanceTracking);
-            panel5.Location = new Point(3, 346);
-            panel5.Name = "panel5";
-            panel5.Padding = new Padding(0, 30, 30, 0);
-            panel5.Size = new Size(208, 42);
-            panel5.TabIndex = 5;
-            // 
-            // btnAttendanceTracking
-            // 
-            btnAttendanceTracking.BackColor = Color.Black;
-            btnAttendanceTracking.Font = new Font("Tahoma", 9F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            btnAttendanceTracking.ForeColor = Color.White;
-            btnAttendanceTracking.Image = Properties.Resources.icons8_attendance_24;
-            btnAttendanceTracking.Location = new Point(-218, -20);
-            btnAttendanceTracking.Name = "btnAttendanceTracking";
-            btnAttendanceTracking.Size = new Size(475, 85);
-            btnAttendanceTracking.TabIndex = 2;
-            btnAttendanceTracking.Text = "                                                                  Attendance Tracking";
-            btnAttendanceTracking.TextAlign = ContentAlignment.MiddleLeft;
-            btnAttendanceTracking.UseVisualStyleBackColor = false;
-            // 
-            // panel6
-            // 
-            panel6.BackColor = Color.Transparent;
-            panel6.Controls.Add(btnPaymentAndBilling);
-            panel6.Location = new Point(3, 394);
-            panel6.Name = "panel6";
-            panel6.Padding = new Padding(0, 30, 30, 0);
-            panel6.Size = new Size(208, 42);
-            panel6.TabIndex = 4;
-            // 
-            // btnPaymentAndBilling
-            // 
-            btnPaymentAndBilling.BackColor = Color.Black;
-            btnPaymentAndBilling.Font = new Font("Tahoma", 9F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            btnPaymentAndBilling.ForeColor = Color.White;
-            btnPaymentAndBilling.Image = Properties.Resources.icons8_peso_23;
-            btnPaymentAndBilling.Location = new Point(-218, -20);
-            btnPaymentAndBilling.Name = "btnPaymentAndBilling";
-            btnPaymentAndBilling.Size = new Size(475, 85);
-            btnPaymentAndBilling.TabIndex = 2;
-            btnPaymentAndBilling.Text = "                                                                  Payment and Billing ";
-            btnPaymentAndBilling.TextAlign = ContentAlignment.MiddleLeft;
-            btnPaymentAndBilling.UseVisualStyleBackColor = false;
-            // 
-            // panel7
-            // 
-            panel7.BackColor = Color.Transparent;
-            panel7.Controls.Add(btnRevenue);
-            panel7.Location = new Point(3, 51);
-            panel7.Name = "panel7";
-            panel7.Padding = new Padding(0, 30, 30, 0);
-            panel7.Size = new Size(208, 42);
-            panel7.TabIndex = 5;
+            btnDashboard.Click += btnDashboard_Click;
             // 
             // btnRevenue
             // 
             btnRevenue.BackColor = Color.Black;
-            btnRevenue.Font = new Font("Tahoma", 9F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            btnRevenue.ForeColor = Color.White;
+            btnRevenue.FlatAppearance.BorderSize = 0;
+            btnRevenue.FlatAppearance.MouseDownBackColor = Color.Navy;
+            btnRevenue.FlatAppearance.MouseOverBackColor = Color.MidnightBlue;
+            btnRevenue.FlatStyle = FlatStyle.Flat;
             btnRevenue.Image = Properties.Resources.icons8_revenue_23;
-            btnRevenue.Location = new Point(-218, -20);
+            btnRevenue.ImageAlign = ContentAlignment.MiddleLeft;
+            btnRevenue.Location = new Point(3, 48);
             btnRevenue.Name = "btnRevenue";
-            btnRevenue.Size = new Size(475, 85);
-            btnRevenue.TabIndex = 2;
-            btnRevenue.Text = "                                                                  Revenue";
-            btnRevenue.TextAlign = ContentAlignment.MiddleLeft;
+            btnRevenue.Size = new Size(203, 39);
+            btnRevenue.TabIndex = 3;
+            btnRevenue.Text = "Revenue";
             btnRevenue.UseVisualStyleBackColor = false;
+            btnRevenue.Click += btnRevenue_Click;
             // 
-            // panel8
+            // pnlDropdown
             // 
-            panel8.BackColor = Color.Transparent;
-            panel8.Controls.Add(btnSettings);
-            panel8.Location = new Point(3, 442);
-            panel8.Name = "panel8";
-            panel8.Padding = new Padding(0, 30, 30, 0);
-            panel8.Size = new Size(208, 42);
-            panel8.TabIndex = 6;
+            pnlDropdown.Controls.Add(button3);
+            pnlDropdown.Controls.Add(button2);
+            pnlDropdown.Controls.Add(button1);
+            pnlDropdown.Controls.Add(pictureBox1);
+            pnlDropdown.Controls.Add(btnMembersManagement);
+            pnlDropdown.Location = new Point(3, 93);
+            pnlDropdown.MaximumSize = new Size(203, 159);
+            pnlDropdown.MinimumSize = new Size(203, 39);
+            pnlDropdown.Name = "pnlDropdown";
+            pnlDropdown.Size = new Size(203, 39);
+            pnlDropdown.TabIndex = 13;
             // 
-            // btnSettings
+            // button3
             // 
-            btnSettings.BackColor = Color.Black;
-            btnSettings.Font = new Font("Tahoma", 9F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            btnSettings.ForeColor = Color.White;
-            btnSettings.Image = Properties.Resources.icons8_settings_23;
-            btnSettings.Location = new Point(-218, -20);
-            btnSettings.Name = "btnSettings";
-            btnSettings.Size = new Size(475, 85);
-            btnSettings.TabIndex = 2;
-            btnSettings.Text = "                                                                  Settings";
-            btnSettings.TextAlign = ContentAlignment.MiddleLeft;
-            btnSettings.UseVisualStyleBackColor = false;
+            button3.BackColor = Color.FromArgb(64, 64, 64);
+            button3.BackgroundImageLayout = ImageLayout.None;
+            button3.Dock = DockStyle.Top;
+            button3.FlatAppearance.BorderSize = 0;
+            button3.FlatAppearance.MouseDownBackColor = Color.MidnightBlue;
+            button3.FlatAppearance.MouseOverBackColor = Color.Navy;
+            button3.FlatStyle = FlatStyle.Flat;
+            button3.Font = new Font("Segoe UI", 8.25F);
+            button3.ImageAlign = ContentAlignment.MiddleRight;
+            button3.Location = new Point(0, 117);
+            button3.Name = "button3";
+            button3.Size = new Size(203, 39);
+            button3.TabIndex = 15;
+            button3.Text = "   Update Member";
+            button3.UseVisualStyleBackColor = false;
             // 
-            // flowLayoutPanel1
+            // button2
             // 
-            flowLayoutPanel1.BackColor = Color.FromArgb(32, 33, 36);
-            flowLayoutPanel1.Controls.Add(panel9);
-            flowLayoutPanel1.Controls.Add(panel11);
-            flowLayoutPanel1.Controls.Add(panel10);
-            flowLayoutPanel1.Location = new Point(3, 147);
-            flowLayoutPanel1.Name = "flowLayoutPanel1";
-            flowLayoutPanel1.Size = new Size(208, 145);
-            flowLayoutPanel1.TabIndex = 7;
-            flowLayoutPanel1.Paint += flowLayoutPanel1_Paint;
+            button2.BackColor = Color.FromArgb(64, 64, 64);
+            button2.BackgroundImageLayout = ImageLayout.None;
+            button2.Dock = DockStyle.Top;
+            button2.FlatAppearance.BorderSize = 0;
+            button2.FlatAppearance.MouseDownBackColor = Color.MidnightBlue;
+            button2.FlatAppearance.MouseOverBackColor = Color.Navy;
+            button2.FlatStyle = FlatStyle.Flat;
+            button2.Font = new Font("Segoe UI", 8.25F);
+            button2.ImageAlign = ContentAlignment.MiddleRight;
+            button2.Location = new Point(0, 78);
+            button2.Name = "button2";
+            button2.Size = new Size(203, 39);
+            button2.TabIndex = 14;
+            button2.Text = "   Delete Member";
+            button2.UseVisualStyleBackColor = false;
             // 
-            // panel9
+            // button1
             // 
-            panel9.BackColor = Color.Transparent;
-            panel9.Controls.Add(btnMemberManagement);
-            panel9.Location = new Point(3, 3);
-            panel9.Name = "panel9";
-            panel9.Padding = new Padding(0, 30, 30, 0);
-            panel9.Size = new Size(208, 42);
-            panel9.TabIndex = 5;
+            button1.BackColor = Color.FromArgb(64, 64, 64);
+            button1.BackgroundImageLayout = ImageLayout.None;
+            button1.Dock = DockStyle.Top;
+            button1.FlatAppearance.BorderSize = 0;
+            button1.FlatAppearance.MouseDownBackColor = Color.MidnightBlue;
+            button1.FlatAppearance.MouseOverBackColor = Color.Navy;
+            button1.FlatStyle = FlatStyle.Flat;
+            button1.Font = new Font("Segoe UI", 8.25F);
+            button1.ImageAlign = ContentAlignment.MiddleRight;
+            button1.Location = new Point(0, 39);
+            button1.Name = "button1";
+            button1.Size = new Size(203, 39);
+            button1.TabIndex = 13;
+            button1.Text = "   Add Member";
+            button1.UseVisualStyleBackColor = false;
             // 
-            // btnMemberManagement
+            // pictureBox1
             // 
-            btnMemberManagement.BackColor = Color.FromArgb(32, 33, 36);
-            btnMemberManagement.Font = new Font("Tahoma", 9F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            btnMemberManagement.ForeColor = Color.White;
-            btnMemberManagement.Image = Properties.Resources.icons8_verified_22;
-            btnMemberManagement.Location = new Point(-218, -20);
-            btnMemberManagement.Name = "btnMemberManagement";
-            btnMemberManagement.Size = new Size(475, 85);
-            btnMemberManagement.TabIndex = 2;
-            btnMemberManagement.Text = "                                                                  Member Management";
-            btnMemberManagement.TextAlign = ContentAlignment.MiddleLeft;
-            btnMemberManagement.UseVisualStyleBackColor = false;
+            pictureBox1.BackColor = Color.Black;
+            pictureBox1.BackgroundImageLayout = ImageLayout.None;
+            pictureBox1.Image = Properties.Resources.icons8_management_24__1_;
+            pictureBox1.Location = new Point(6, 8);
+            pictureBox1.Name = "pictureBox1";
+            pictureBox1.Size = new Size(23, 23);
+            pictureBox1.SizeMode = PictureBoxSizeMode.StretchImage;
+            pictureBox1.TabIndex = 12;
+            pictureBox1.TabStop = false;
             // 
-            // panel10
+            // btnMembersManagement
             // 
-            panel10.BackColor = Color.Transparent;
-            panel10.Controls.Add(btnClassManagement);
-            panel10.Location = new Point(3, 99);
-            panel10.Name = "panel10";
-            panel10.Padding = new Padding(0, 30, 30, 0);
-            panel10.Size = new Size(208, 42);
-            panel10.TabIndex = 5;
+            btnMembersManagement.BackColor = Color.Black;
+            btnMembersManagement.Dock = DockStyle.Top;
+            btnMembersManagement.FlatAppearance.BorderSize = 0;
+            btnMembersManagement.FlatAppearance.MouseDownBackColor = Color.Navy;
+            btnMembersManagement.FlatAppearance.MouseOverBackColor = Color.Navy;
+            btnMembersManagement.FlatStyle = FlatStyle.Flat;
+            btnMembersManagement.Image = Properties.Resources.icons8_expand_arrow_152;
+            btnMembersManagement.ImageAlign = ContentAlignment.MiddleRight;
+            btnMembersManagement.Location = new Point(0, 0);
+            btnMembersManagement.Name = "btnMembersManagement";
+            btnMembersManagement.Size = new Size(203, 39);
+            btnMembersManagement.TabIndex = 4;
+            btnMembersManagement.Text = "      Members Management";
+            btnMembersManagement.TextImageRelation = TextImageRelation.TextBeforeImage;
+            btnMembersManagement.UseVisualStyleBackColor = false;
+            btnMembersManagement.Click += btnMembersManagement_Click_1;
             // 
-            // btnClassManagement
+            // btnTrainersManagement
             // 
-            btnClassManagement.BackColor = Color.FromArgb(32, 33, 36);
-            btnClassManagement.Font = new Font("Tahoma", 9F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            btnClassManagement.ForeColor = Color.White;
-            btnClassManagement.Image = Properties.Resources.icons8_verified_22;
-            btnClassManagement.Location = new Point(-218, -20);
-            btnClassManagement.Name = "btnClassManagement";
-            btnClassManagement.Size = new Size(475, 85);
-            btnClassManagement.TabIndex = 2;
-            btnClassManagement.Text = "                                                                  Class management";
-            btnClassManagement.TextAlign = ContentAlignment.MiddleLeft;
-            btnClassManagement.UseVisualStyleBackColor = false;
+            btnTrainersManagement.BackColor = Color.Black;
+            btnTrainersManagement.Dock = DockStyle.Top;
+            btnTrainersManagement.FlatAppearance.BorderSize = 0;
+            btnTrainersManagement.FlatAppearance.MouseDownBackColor = Color.Navy;
+            btnTrainersManagement.FlatAppearance.MouseOverBackColor = Color.MidnightBlue;
+            btnTrainersManagement.FlatStyle = FlatStyle.Flat;
+            btnTrainersManagement.Image = Properties.Resources.icons8_expand_arrow_15;
+            btnTrainersManagement.ImageAlign = ContentAlignment.MiddleRight;
+            btnTrainersManagement.Location = new Point(0, 0);
+            btnTrainersManagement.Name = "btnTrainersManagement";
+            btnTrainersManagement.Size = new Size(203, 39);
+            btnTrainersManagement.TabIndex = 6;
+            btnTrainersManagement.Text = "Trainers Management";
+            btnTrainersManagement.UseVisualStyleBackColor = false;
+            btnTrainersManagement.Click += btnTrainersManagement_Click;
             // 
-            // panel11
+            // btnClassSchedules
             // 
-            panel11.BackColor = Color.Transparent;
-            panel11.Controls.Add(btnInstructorManagement);
-            panel11.Location = new Point(3, 51);
-            panel11.Name = "panel11";
-            panel11.Padding = new Padding(0, 30, 30, 0);
-            panel11.Size = new Size(208, 42);
-            panel11.TabIndex = 8;
+            btnClassSchedules.BackColor = Color.Black;
+            btnClassSchedules.FlatAppearance.BorderSize = 0;
+            btnClassSchedules.FlatAppearance.MouseDownBackColor = Color.Navy;
+            btnClassSchedules.FlatAppearance.MouseOverBackColor = Color.MidnightBlue;
+            btnClassSchedules.FlatStyle = FlatStyle.Flat;
+            btnClassSchedules.Image = Properties.Resources.icons8_schedule_24;
+            btnClassSchedules.ImageAlign = ContentAlignment.MiddleLeft;
+            btnClassSchedules.Location = new Point(3, 183);
+            btnClassSchedules.Name = "btnClassSchedules";
+            btnClassSchedules.Size = new Size(203, 39);
+            btnClassSchedules.TabIndex = 5;
+            btnClassSchedules.Text = "Classes && Schedules";
+            btnClassSchedules.UseVisualStyleBackColor = false;
+            btnClassSchedules.Click += btnClassSchedules_Click;
             // 
-            // btnInstructorManagement
+            // btnAttendanceTracking
             // 
-            btnInstructorManagement.BackColor = Color.FromArgb(32, 33, 36);
-            btnInstructorManagement.Font = new Font("Tahoma", 9F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            btnInstructorManagement.ForeColor = Color.White;
-            btnInstructorManagement.Image = Properties.Resources.icons8_verified_22;
-            btnInstructorManagement.Location = new Point(-218, -20);
-            btnInstructorManagement.Name = "btnInstructorManagement";
-            btnInstructorManagement.Size = new Size(475, 85);
-            btnInstructorManagement.TabIndex = 2;
-            btnInstructorManagement.Text = "                                                                  Instructor Management";
-            btnInstructorManagement.TextAlign = ContentAlignment.MiddleLeft;
-            btnInstructorManagement.UseVisualStyleBackColor = false;
+            btnAttendanceTracking.BackColor = Color.Black;
+            btnAttendanceTracking.FlatAppearance.BorderSize = 0;
+            btnAttendanceTracking.FlatAppearance.MouseDownBackColor = Color.Navy;
+            btnAttendanceTracking.FlatAppearance.MouseOverBackColor = Color.MidnightBlue;
+            btnAttendanceTracking.FlatStyle = FlatStyle.Flat;
+            btnAttendanceTracking.Image = Properties.Resources.icons8_attendance_24;
+            btnAttendanceTracking.ImageAlign = ContentAlignment.MiddleLeft;
+            btnAttendanceTracking.Location = new Point(3, 228);
+            btnAttendanceTracking.Name = "btnAttendanceTracking";
+            btnAttendanceTracking.Size = new Size(203, 39);
+            btnAttendanceTracking.TabIndex = 7;
+            btnAttendanceTracking.Text = "Attendance Tracking";
+            btnAttendanceTracking.UseVisualStyleBackColor = false;
+            btnAttendanceTracking.Click += btnAttendanceTracking_Click;
+            // 
+            // btnMemberships
+            // 
+            btnMemberships.BackColor = Color.Black;
+            btnMemberships.FlatAppearance.BorderSize = 0;
+            btnMemberships.FlatAppearance.MouseDownBackColor = Color.Navy;
+            btnMemberships.FlatAppearance.MouseOverBackColor = Color.MidnightBlue;
+            btnMemberships.FlatStyle = FlatStyle.Flat;
+            btnMemberships.Image = Properties.Resources.icons8_diamond_24;
+            btnMemberships.ImageAlign = ContentAlignment.MiddleLeft;
+            btnMemberships.Location = new Point(3, 318);
+            btnMemberships.Name = "btnMemberships";
+            btnMemberships.Size = new Size(203, 39);
+            btnMemberships.TabIndex = 11;
+            btnMemberships.Text = "Memberships";
+            btnMemberships.UseVisualStyleBackColor = false;
+            btnMemberships.Click += btnMemberships_Click;
+            // 
+            // btnBillingPayments
+            // 
+            btnBillingPayments.BackColor = Color.Black;
+            btnBillingPayments.FlatAppearance.BorderSize = 0;
+            btnBillingPayments.FlatAppearance.MouseDownBackColor = Color.Navy;
+            btnBillingPayments.FlatAppearance.MouseOverBackColor = Color.MidnightBlue;
+            btnBillingPayments.FlatStyle = FlatStyle.Flat;
+            btnBillingPayments.Image = Properties.Resources.icons8_peso_23;
+            btnBillingPayments.ImageAlign = ContentAlignment.MiddleLeft;
+            btnBillingPayments.Location = new Point(3, 273);
+            btnBillingPayments.Name = "btnBillingPayments";
+            btnBillingPayments.Size = new Size(203, 39);
+            btnBillingPayments.TabIndex = 8;
+            btnBillingPayments.Text = "Billing && Payments";
+            btnBillingPayments.UseVisualStyleBackColor = false;
+            btnBillingPayments.Click += btnBillingPayments_Click;
+            // 
+            // tmrDropdown
+            // 
+            tmrDropdown.Interval = 15;
+            tmrDropdown.Tick += tmrDropdown_Tick;
+            // 
+            // tmrSidecut
+            // 
+            tmrSidecut.Interval = 5;
+            tmrSidecut.Tick += tmrSidecut_Tick;
+            // 
+            // pnlSide
+            // 
+            pnlSide.BackColor = Color.Black;
+            pnlSide.Controls.Add(btnDashboard);
+            pnlSide.Controls.Add(btnRevenue);
+            pnlSide.Controls.Add(pnlDropdown);
+            pnlSide.Controls.Add(pnlTrainersManagement);
+            pnlSide.Controls.Add(btnClassSchedules);
+            pnlSide.Controls.Add(btnAttendanceTracking);
+            pnlSide.Controls.Add(btnBillingPayments);
+            pnlSide.Controls.Add(btnMemberships);
+            pnlSide.Location = new Point(0, 54);
+            pnlSide.MaximumSize = new Size(220, 674);
+            pnlSide.MinimumSize = new Size(43, 674);
+            pnlSide.Name = "pnlSide";
+            pnlSide.Size = new Size(220, 674);
+            pnlSide.TabIndex = 14;
+            // 
+            // pnlTrainersManagement
+            // 
+            pnlTrainersManagement.Controls.Add(button6);
+            pnlTrainersManagement.Controls.Add(button5);
+            pnlTrainersManagement.Controls.Add(button4);
+            pnlTrainersManagement.Controls.Add(btnTrainersManagement);
+            pnlTrainersManagement.Location = new Point(3, 138);
+            pnlTrainersManagement.MaximumSize = new Size(203, 155);
+            pnlTrainersManagement.MinimumSize = new Size(203, 39);
+            pnlTrainersManagement.Name = "pnlTrainersManagement";
+            pnlTrainersManagement.Size = new Size(203, 39);
+            pnlTrainersManagement.TabIndex = 11;
+            // 
+            // button6
+            // 
+            button6.BackColor = Color.DimGray;
+            button6.Dock = DockStyle.Top;
+            button6.FlatAppearance.BorderSize = 0;
+            button6.FlatAppearance.MouseDownBackColor = Color.Navy;
+            button6.FlatAppearance.MouseOverBackColor = Color.MidnightBlue;
+            button6.FlatStyle = FlatStyle.Flat;
+            button6.Image = Properties.Resources.icons8_expand_arrow_15;
+            button6.ImageAlign = ContentAlignment.MiddleRight;
+            button6.Location = new Point(0, 117);
+            button6.Name = "button6";
+            button6.Size = new Size(203, 39);
+            button6.TabIndex = 9;
+            button6.Text = "Trainers Management";
+            button6.UseVisualStyleBackColor = false;
+            // 
+            // button5
+            // 
+            button5.BackColor = Color.DimGray;
+            button5.Dock = DockStyle.Top;
+            button5.FlatAppearance.BorderSize = 0;
+            button5.FlatAppearance.MouseDownBackColor = Color.Navy;
+            button5.FlatAppearance.MouseOverBackColor = Color.MidnightBlue;
+            button5.FlatStyle = FlatStyle.Flat;
+            button5.Image = Properties.Resources.icons8_expand_arrow_15;
+            button5.ImageAlign = ContentAlignment.MiddleRight;
+            button5.Location = new Point(0, 78);
+            button5.Name = "button5";
+            button5.Size = new Size(203, 39);
+            button5.TabIndex = 8;
+            button5.Text = "Trainers Management";
+            button5.UseVisualStyleBackColor = false;
+            // 
+            // button4
+            // 
+            button4.BackColor = Color.DimGray;
+            button4.Dock = DockStyle.Top;
+            button4.FlatAppearance.BorderSize = 0;
+            button4.FlatAppearance.MouseDownBackColor = Color.Navy;
+            button4.FlatAppearance.MouseOverBackColor = Color.MidnightBlue;
+            button4.FlatStyle = FlatStyle.Flat;
+            button4.Image = Properties.Resources.icons8_expand_arrow_15;
+            button4.ImageAlign = ContentAlignment.MiddleRight;
+            button4.Location = new Point(0, 39);
+            button4.Name = "button4";
+            button4.Size = new Size(203, 39);
+            button4.TabIndex = 7;
+            button4.Text = "Trainers Management";
+            button4.UseVisualStyleBackColor = false;
+            // 
+            // tmrWelcome
+            // 
+            tmrWelcome.Interval = 15;
+            tmrWelcome.Tick += tmrWelcome_Tick;
+            // 
+            // pnlWelcome
+            // 
+            pnlWelcome.Controls.Add(btnWelcome);
+            pnlWelcome.Controls.Add(btnLogout);
+            pnlWelcome.Controls.Add(btnChangePassword);
+            pnlWelcome.Controls.Add(btnProfile);
+            pnlWelcome.Location = new Point(1218, 11);
+            pnlWelcome.MaximumSize = new Size(140, 175);
+            pnlWelcome.MinimumSize = new Size(140, 43);
+            pnlWelcome.Name = "pnlWelcome";
+            pnlWelcome.Size = new Size(140, 43);
+            pnlWelcome.TabIndex = 15;
+            // 
+            // btnWelcome
+            // 
+            btnWelcome.BackColor = Color.DarkBlue;
+            btnWelcome.Dock = DockStyle.Top;
+            btnWelcome.FlatAppearance.BorderSize = 0;
+            btnWelcome.FlatAppearance.MouseDownBackColor = Color.FromArgb(128, 128, 255);
+            btnWelcome.FlatAppearance.MouseOverBackColor = Color.FromArgb(0, 0, 192);
+            btnWelcome.FlatStyle = FlatStyle.Flat;
+            btnWelcome.Image = Properties.Resources.icons8_user_30;
+            btnWelcome.ImageAlign = ContentAlignment.MiddleRight;
+            btnWelcome.Location = new Point(0, 0);
+            btnWelcome.MinimumSize = new Size(140, 43);
+            btnWelcome.Name = "btnWelcome";
+            btnWelcome.Size = new Size(140, 43);
+            btnWelcome.TabIndex = 3;
+            btnWelcome.Text = "Welcome | Admin";
+            btnWelcome.TextAlign = ContentAlignment.MiddleLeft;
+            btnWelcome.UseVisualStyleBackColor = false;
+            btnWelcome.Click += btnWelcome_Click;
+            // 
+            // btnLogout
+            // 
+            btnLogout.BackColor = Color.WhiteSmoke;
+            btnLogout.FlatAppearance.BorderSize = 0;
+            btnLogout.FlatAppearance.MouseDownBackColor = Color.FromArgb(224, 224, 224);
+            btnLogout.FlatAppearance.MouseOverBackColor = Color.Silver;
+            btnLogout.FlatStyle = FlatStyle.Flat;
+            btnLogout.ForeColor = Color.FromArgb(64, 64, 64);
+            btnLogout.Image = Properties.Resources.icons8_logout_24;
+            btnLogout.ImageAlign = ContentAlignment.MiddleLeft;
+            btnLogout.Location = new Point(0, 132);
+            btnLogout.Name = "btnLogout";
+            btnLogout.Size = new Size(140, 43);
+            btnLogout.TabIndex = 6;
+            btnLogout.Text = "Logout";
+            btnLogout.UseVisualStyleBackColor = false;
+            // 
+            // btnChangePassword
+            // 
+            btnChangePassword.BackColor = Color.WhiteSmoke;
+            btnChangePassword.FlatAppearance.BorderSize = 0;
+            btnChangePassword.FlatAppearance.MouseDownBackColor = Color.FromArgb(224, 224, 224);
+            btnChangePassword.FlatAppearance.MouseOverBackColor = Color.Silver;
+            btnChangePassword.FlatStyle = FlatStyle.Flat;
+            btnChangePassword.ForeColor = Color.FromArgb(64, 64, 64);
+            btnChangePassword.Image = Properties.Resources.icons8_settings_24__1_;
+            btnChangePassword.ImageAlign = ContentAlignment.MiddleLeft;
+            btnChangePassword.Location = new Point(0, 89);
+            btnChangePassword.Name = "btnChangePassword";
+            btnChangePassword.Size = new Size(140, 43);
+            btnChangePassword.TabIndex = 5;
+            btnChangePassword.Text = "        Change Password";
+            btnChangePassword.UseVisualStyleBackColor = false;
+            // 
+            // btnProfile
+            // 
+            btnProfile.BackColor = Color.WhiteSmoke;
+            btnProfile.FlatAppearance.BorderSize = 0;
+            btnProfile.FlatAppearance.MouseDownBackColor = Color.FromArgb(224, 224, 224);
+            btnProfile.FlatAppearance.MouseOverBackColor = Color.Silver;
+            btnProfile.FlatStyle = FlatStyle.Flat;
+            btnProfile.ForeColor = Color.FromArgb(64, 64, 64);
+            btnProfile.Image = Properties.Resources.people_16551886;
+            btnProfile.ImageAlign = ContentAlignment.MiddleLeft;
+            btnProfile.Location = new Point(0, 45);
+            btnProfile.Name = "btnProfile";
+            btnProfile.Size = new Size(140, 43);
+            btnProfile.TabIndex = 4;
+            btnProfile.Text = "Profile";
+            btnProfile.UseVisualStyleBackColor = false;
+            // 
+            // btnNotifications
+            // 
+            btnNotifications.BackColor = Color.DarkBlue;
+            btnNotifications.FlatAppearance.BorderSize = 0;
+            btnNotifications.FlatAppearance.MouseDownBackColor = Color.Navy;
+            btnNotifications.FlatAppearance.MouseOverBackColor = Color.MidnightBlue;
+            btnNotifications.FlatStyle = FlatStyle.Flat;
+            btnNotifications.Image = Properties.Resources.icons8_bell_24;
+            btnNotifications.ImageAlign = ContentAlignment.MiddleLeft;
+            btnNotifications.Location = new Point(860, 13);
+            btnNotifications.Name = "btnNotifications";
+            btnNotifications.Size = new Size(135, 37);
+            btnNotifications.TabIndex = 9;
+            btnNotifications.Text = "Notifications";
+            btnNotifications.UseVisualStyleBackColor = false;
+            btnNotifications.Click += btnNotifications_Click;
+            // 
+            // pnlTopside
+            // 
+            pnlTopside.BackColor = Color.MediumBlue;
+            pnlTopside.Controls.Add(btnMenu);
+            pnlTopside.Controls.Add(pictureBox3);
+            pnlTopside.Location = new Point(0, 0);
+            pnlTopside.Name = "pnlTopside";
+            pnlTopside.Size = new Size(220, 54);
+            pnlTopside.TabIndex = 2;
+            // 
+            // btnMenu
+            // 
+            btnMenu.BackgroundImageLayout = ImageLayout.None;
+            btnMenu.FlatAppearance.BorderSize = 0;
+            btnMenu.FlatStyle = FlatStyle.Flat;
+            btnMenu.Image = Properties.Resources.option;
+            btnMenu.Location = new Point(5, 15);
+            btnMenu.Name = "btnMenu";
+            btnMenu.Size = new Size(35, 31);
+            btnMenu.TabIndex = 1;
+            btnMenu.UseVisualStyleBackColor = true;
+            btnMenu.Click += btnMenu_Click;
+            // 
+            // pictureBox3
+            // 
+            pictureBox3.BackgroundImageLayout = ImageLayout.None;
+            pictureBox3.Image = Properties.Resources.cy_removebg_preview;
+            pictureBox3.Location = new Point(46, 7);
+            pictureBox3.Name = "pictureBox3";
+            pictureBox3.Size = new Size(167, 46);
+            pictureBox3.SizeMode = PictureBoxSizeMode.StretchImage;
+            pictureBox3.TabIndex = 0;
+            pictureBox3.TabStop = false;
+            // 
+            // pnlTop
+            // 
+            pnlTop.BackColor = Color.White;
+            pnlTop.Controls.Add(pnlTopside);
+            pnlTop.Controls.Add(pnlWelcome);
+            pnlTop.Controls.Add(panel1);
+            pnlTop.Dock = DockStyle.Fill;
+            pnlTop.Location = new Point(0, 0);
+            pnlTop.Name = "pnlTop";
+            pnlTop.Size = new Size(1370, 729);
+            pnlTop.TabIndex = 0;
+            // 
+            // panel1
+            // 
+            panel1.Controls.Add(pnlShowHere);
+            panel1.Controls.Add(pnlNotifications);
+            panel1.Controls.Add(btnNotifications);
+            panel1.Controls.Add(panel2);
+            panel1.Location = new Point(220, 1);
+            panel1.Name = "panel1";
+            panel1.Size = new Size(1150, 728);
+            panel1.TabIndex = 16;
+            panel1.Paint += panel1_Paint_2;
+            // 
+            // pnlShowHere
+            // 
+            pnlShowHere.AutoScroll = true;
+            pnlShowHere.BackColor = Color.White;
+            pnlShowHere.Location = new Point(0, 53);
+            pnlShowHere.Name = "pnlShowHere";
+            pnlShowHere.Size = new Size(1150, 675);
+            pnlShowHere.TabIndex = 11;
+            // 
+            // pnlNotifications
+            // 
+            pnlNotifications.BackColor = Color.WhiteSmoke;
+            pnlNotifications.Controls.Add(panel4);
+            pnlNotifications.Location = new Point(783, 55);
+            pnlNotifications.MaximumSize = new Size(305, 404);
+            pnlNotifications.MinimumSize = new Size(305, 10);
+            pnlNotifications.Name = "pnlNotifications";
+            pnlNotifications.Size = new Size(305, 10);
+            pnlNotifications.TabIndex = 0;
+            // 
+            // panel4
+            // 
+            panel4.BackColor = Color.LightGray;
+            panel4.BackgroundImageLayout = ImageLayout.None;
+            panel4.Controls.Add(lblNotifications);
+            panel4.Dock = DockStyle.Top;
+            panel4.Location = new Point(0, 0);
+            panel4.Name = "panel4";
+            panel4.Size = new Size(305, 35);
+            panel4.TabIndex = 0;
+            // 
+            // lblNotifications
+            // 
+            lblNotifications.AutoSize = true;
+            lblNotifications.Font = new Font("Segoe UI Semibold", 14.25F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            lblNotifications.ForeColor = Color.Black;
+            lblNotifications.Location = new Point(14, 4);
+            lblNotifications.Name = "lblNotifications";
+            lblNotifications.Size = new Size(123, 25);
+            lblNotifications.TabIndex = 0;
+            lblNotifications.Text = "Notifications";
+            lblNotifications.Click += lblNotifications_Click;
+            // 
+            // panel2
+            // 
+            panel2.BackColor = Color.DarkBlue;
+            panel2.Location = new Point(-8, -1);
+            panel2.Name = "panel2";
+            panel2.Size = new Size(1158, 54);
+            panel2.TabIndex = 10;
+            // 
+            // tmrDropdownTM
+            // 
+            tmrDropdownTM.Interval = 15;
+            tmrDropdownTM.Tick += tmrDropdownTM_Tick;
+            // 
+            // tmrNotifications
+            // 
+            tmrNotifications.Interval = 1;
+            tmrNotifications.Tick += tmrNotifications_Tick;
             // 
             // frmMainPanel
             // 
@@ -365,57 +623,70 @@
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.White;
             ClientSize = new Size(1370, 729);
-            Controls.Add(flowLayoutPanel2);
-            Controls.Add(panel1);
+            Controls.Add(pnlSide);
+            Controls.Add(pnlTop);
             ForeColor = Color.White;
             FormBorderStyle = FormBorderStyle.FixedSingle;
             Name = "frmMainPanel";
+            ShowInTaskbar = false;
             StartPosition = FormStartPosition.CenterScreen;
-            Text = "Panel";
+            Text = "dgfdfggfh";
             WindowState = FormWindowState.Maximized;
             Load += frmMainPanel_Load;
-            panel1.ResumeLayout(false);
+            pnlDropdown.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
-            flowLayoutPanel2.ResumeLayout(false);
-            panel2.ResumeLayout(false);
-            panel3.ResumeLayout(false);
+            pnlSide.ResumeLayout(false);
+            pnlTrainersManagement.ResumeLayout(false);
+            pnlWelcome.ResumeLayout(false);
+            pnlTopside.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)pictureBox3).EndInit();
+            pnlTop.ResumeLayout(false);
+            panel1.ResumeLayout(false);
+            pnlNotifications.ResumeLayout(false);
             panel4.ResumeLayout(false);
-            panel5.ResumeLayout(false);
-            panel6.ResumeLayout(false);
-            panel7.ResumeLayout(false);
-            panel8.ResumeLayout(false);
-            flowLayoutPanel1.ResumeLayout(false);
-            panel9.ResumeLayout(false);
-            panel10.ResumeLayout(false);
-            panel11.ResumeLayout(false);
+            panel4.PerformLayout();
             ResumeLayout(false);
         }
 
         #endregion
-
-        private Panel panel1;
-        private PictureBox pictureBox1;
-        private FlowLayoutPanel flowLayoutPanel2;
-        private Panel panel2;
-        private Button btnDashboard;
-        private Panel panel3;
-        private Button btnManagement;
-        private Panel panel4;
-        private Button btnMembershipPlans;
-        private Panel panel5;
+        private Button btnClassSchedules;
+        private Button btnBillingPayments;
         private Button btnAttendanceTracking;
-        private Panel panel6;
-        private Button btnPaymentAndBilling;
-        private Panel panel7;
+        private Button btnTrainersManagement;
+        private Button btnMemberships;
+        private System.Windows.Forms.Timer tmrDropdown;
         private Button btnRevenue;
-        private Panel panel8;
-        private Button btnSettings;
-        private FlowLayoutPanel flowLayoutPanel1;
-        private Panel panel9;
-        private Button btnMemberManagement;
-        private Panel panel10;
-        private Button btnClassManagement;
-        private Panel panel11;
-        private Button btnInstructorManagement;
+        private Button btnDashboard;
+        private Panel pnlDropdown;
+        private Button button3;
+        private Button button2;
+        private Button button1;
+        private PictureBox pictureBox1;
+        private Button btnMembersManagement;
+        private System.Windows.Forms.Timer tmrSidecut;
+        private FlowLayoutPanel pnlSide;
+        private System.Windows.Forms.Timer tmrWelcome;
+        private Panel pnlWelcome;
+        private Button btnWelcome;
+        private Button btnLogout;
+        private Button btnChangePassword;
+        private Button btnProfile;
+        private Button btnNotifications;
+        private Panel pnlTopside;
+        private Button btnMenu;
+        private PictureBox pictureBox3;
+        private Panel pnlTop;
+        private Panel panel1;
+        private Panel panel2;
+        private Panel pnlTrainersManagement;
+        private Button button6;
+        private Button button5;
+        private Button button4;
+        private System.Windows.Forms.Timer tmrDropdownTM;
+        private Panel pnlShowHere;
+        private Panel pnlNotifications;
+        private Panel panel4;
+        private System.Windows.Forms.Timer tmrNotifications;
+        private Label lblNotifications;
     }
 }
